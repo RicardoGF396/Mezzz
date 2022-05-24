@@ -1,0 +1,453 @@
+@font-face {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    src: url('assets/fonts/Gill\ Sans\ Medium.otf');
+}
+
+@font-face {
+    font-family: 'Cooper Black';
+    src: url('assets/fonts/Cooper\ Black\ Regular.ttf');
+}
+
+:root{
+    --dark-pink: #d6afc0;
+    --light-pink: #e8cdd9;
+    --light-yellow: #f6eab7;
+    --background-color: #FFF8F4;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--background-color);
+    
+}
+
+
+main{
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 375px;
+}
+
+p{
+    color: var(--dark-pink);
+    font-weight: 600;
+}
+
+header{
+    width: 100%;
+    padding: 0 .5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    background-color: var(--dark-pink);
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    width: 90%;
+}
+
+/* Display None */
+.studio_container, .studio_text{
+    display: none;
+}
+
+    /* Nav */
+
+.hamburguer_img,
+.logo_img{
+    width: 2.5rem;
+}
+
+.brand_name{
+    width: 350px;
+}
+
+.brand{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* About */
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_about{
+    width: 97%;
+    margin-bottom: 1.7rem;
+}
+
+.about_text{
+    padding: 0 .7rem;
+}
+
+/* Portfolio */
+
+.portfolio{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    background-color: var(--dark-pink);
+    padding: .6rem 3rem;
+    width: 250px;
+    border-radius: 3rem;
+}
+
+.portfolio_icon{
+    width: 100px;
+    margin-top: 1rem;
+}
+
+/* Team */
+
+.team{
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_team{
+    width: 350px;
+}
+
+.team_columns{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+.img_team{
+    width: 200px;
+}
+
+.team_name{
+    font-family: 'Cooper Black';
+    border: 3px solid var(--dark-pink);
+    border-radius: 3rem;
+    margin: 1rem;
+    width: 200px;
+}
+
+.team_columns{
+    padding: 0 1rem;
+}
+
+.title_name{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 7rem;
+    position: relative;
+}
+
+.title.title_footer{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2rem;
+}
+
+.container_yellow{
+    background-color: var(--light-yellow);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column-reverse;
+    height: 400px;
+    margin: 0 .5rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.social_icons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons > img{
+    width: 50px;
+    margin-bottom: 1rem;
+}
+
+.email_ico{
+    width: 80px;
+    margin-bottom: 1rem;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+
+.black_text{
+    color: black;
+    font-weight: 500;
+}
+
+/* Tablet  768px */
+@media (min-width: 768px){
+
+    /* Presentation */
+
+    .brand_name{
+        width: 600px;
+    }
+
+    /* About */
+
+    .content{
+        width: 750px;
+    }
+
+    .about_text{
+        text-align: center;
+        font-size: 1.5rem;
+        width: 580px;
+    }
+
+    /* Portfolio */
+
+    .portfolio{
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .content_portfolio{
+        margin-right: 3rem;
+    }
+
+    .title_team{
+        width: 700px;
+        margin-bottom: 4rem;
+    }
+
+    .col{
+        display: flex;
+        column-gap: 5rem;
+    }
+
+    .img_team{
+        width: 300px;
+        margin-bottom: 3rem;
+    }
+
+    .col_content{
+        width: 280px;
+    }
+
+    .col:nth-child(2){
+        flex-direction: row-reverse;
+    }
+
+    /* Footer */
+
+    .title{
+        width: 380px;
+        border-radius: 1rem;
+    }
+
+    .title.title_footer{
+        font-size: 2rem;
+        top: -4rem;
+    }
+
+    .black_text{
+        font-size: 1.8rem;
+    }
+
+    .email_ico{
+        margin-top: 5rem;
+        width: 160px;
+    }
+
+    .icons > img{
+        width: 100px;
+        margin-bottom: 1rem;
+    }
+
+    .container_yellow{
+        height: 750px;
+        margin: 0 3rem 2rem 3rem;
+    }
+
+}
+
+/* Tablet  768px */
+@media (min-width: 1024px){
+
+    main{
+        width: 100%;
+    }
+
+    .content{
+        width: 90%;
+    }
+
+    .studio_container{
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 3rem;
+        padding: 0 2rem;
+    }
+
+    .studio_desktop{
+        width: 50%;
+    }
+
+    .banner_dektop{
+        width: 50%;
+    }
+
+    .brand, .about, .portfolio{
+        display: none;
+    }
+
+    .about_text{
+        text-align: left;
+        width: 520px;
+    }
+
+    .studio_text{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+    }
+
+    .content_portfolio{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title_team{
+        margin-top: 3rem;
+        width: 1000px;
+    }
+
+    .team_columns{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .team_name{
+        border: 5px solid var(--dark-pink);
+    }
+
+    .col, .col:nth-child(2){
+        flex-direction: column;
+    }
+
+    .team_text{
+        text-align: left;
+    }
+    
+    .img_team{
+        margin-bottom: 0rem;
+    }
+
+    .title_name3{
+        margin-top: .5rem;
+    }
+
+    /* Footer */
+
+    .title>h2{
+        font-size: 1.5rem;
+    }
+
+    .title.title_footer{
+        position: absolute;
+        margin-right: 0;
+        right: 100px;
+        top: -5rem;
+        border-radius: 3rem;
+    }
+
+    .container_yellow{
+        flex-direction: row;
+        align-items: center;
+        height: 300px;
+    }
+
+    .email_icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 6rem;
+    }
+
+    .email_ico{
+        width: 100px;
+    }
+
+}
+
+
+/* 
+
+.title.title_footer{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: -2rem;
+}
+
+*/
