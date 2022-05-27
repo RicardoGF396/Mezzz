@@ -137,11 +137,12 @@ nav{
 
 .btn_project{
     background-color: var(--dark-pink);
-    padding: .5rem 3rem;
+    padding: .35rem 2.1rem;
     margin-top: 1rem;
     color: white;
     font-weight: bold;
     border-radius: 3rem;
+    font-size: .9rem;
 }
 
 .title_project{
@@ -201,11 +202,11 @@ footer{
 }
 
 .social>img{
-    width: 50px;
+    width: 35px;
 }
 
 .black_text{
-    color: black;
+    color: white;
     margin-top: 1rem;
 }
 

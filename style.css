@@ -130,7 +130,7 @@ nav{
 }
 
 .portfolio_icon{
-    width: 100px;
+    width: 70px;
     margin-top: 1rem;
 }
 
@@ -218,7 +218,7 @@ footer{
 }
 
 .email_ico{
-    width: 80px;
+    width: 56px;
     margin-bottom: 1rem;
 }
 
@@ -229,7 +229,7 @@ footer{
 }
 
 .black_text{
-    color: black;
+    color: var(--dark-pink);
     font-weight: 500;
 }
 
